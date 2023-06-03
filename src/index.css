@@ -7,3 +7,25 @@
 body {
     font-family: 'Lexend Deca', sans-serif;
 }
+
+/* .skill-name {
+    transition: all .3s;
+} */
+
+.skill-block:hover .skill-name {
+    left: 70%;
+}
+
+.skill-block:hover .skill-logo {
+    left: 30%
+}
+
+.skill-logo {
+    left: 50%;
+    transition: all .3s ease-out;
+}
+
+.skill-name {
+    left: 50%;
+    transition: all .3s ease-out;
+}
