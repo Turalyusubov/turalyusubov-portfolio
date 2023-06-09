@@ -72,10 +72,10 @@ export default function Skills() {
     return (
         <div className='bg-dark-green text-stone-100 relative flex flex-col justify-center items-center py-20 h-full md:h-screen w-full px-6 md:px-32'>
             <h2 className='font-bold mb-20 text-4xl'>My <span className='text-light-green'>Skills</span></h2>
-            <div className="grid grid-cols-5 gap-10 w-full">
+            <div className="skills-container w-full">
                 {skills.map(skill =>
-                    <div key={skill.id} className="flex w-full h-20 items-center justify-center skill-block group relative items-center gap-2">
-                        <div className={`bg-light-green overflow-hidden absolute skill-logo ${skill.color} duration-300 z-10 rounded-full text-5xl p-3`}>
+                    <div key={skill.id} className="w-full flex justify-center items-center skill-block group relative">
+                        <div className={`bg-light-green absolute overflow-hidden skill-logo ${skill.color} duration-300 z-10 rounded-full text-5xl p-3`}>
                             {skill.logo}
                         </div>
                         <p className='skill-name absolute text-dark-green group-hover:text-white left-0 z-0'>{skill.name}</p>

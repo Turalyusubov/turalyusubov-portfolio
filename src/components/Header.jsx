@@ -2,7 +2,7 @@ import React from 'react'
 import { AiOutlineInstagram } from 'react-icons/ai'
 import { FiGithub } from 'react-icons/fi'
 import { FaLinkedinIn } from 'react-icons/fa'
-import Profile from '../assets/profile.png'
+import Profile from '../assets/nigga.jpg'
 
 export default function Header() {
     return (
