@@ -19,8 +19,11 @@ export default function Contact() {
     };
 
     return (
-        <div className='bg-dark-green text-stone-100 relative flex flex-col justify-center items-center py-20 h-full w-full px-6 md:px-32'>
-            <h2 className='font-bold mb-20 text-4xl'>Contact <span className='text-light-green'>Me!</span></h2>
+        <div className='bg-dark-green text-stone-100 relative grid grid-cols-2 justify-center items-center py-20 h-full w-full px-6 md:px-32'>
+            <div className="w-4/5">
+                <h2 className='font-bold mb-8 text-4xl'>Contact <span className='text-light-green'>Me!</span></h2>
+                <p>Let's connect! Have a project idea or want to say hello? Reach out using the contact form or connect on social media. Let's bring your ideas to life!</p>
+            </div>
             <div className="w-full">
                 <form
                     ref={form}
