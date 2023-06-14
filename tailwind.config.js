@@ -8,9 +8,9 @@ export default {
 
     extend: {
       colors: {
-        'dark-green': '#1e4520',
-        'main-green': '#1e591d',
-        'light-green': '#22a820'
+        'dark-green': '#193B1A',
+        'main-green': '#3D8F40',
+        'light-green': '#6CFA70'
       },
     },
   },

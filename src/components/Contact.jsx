@@ -1,7 +1,11 @@
 import React, { useRef } from 'react';
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 import emailjs from '@emailjs/browser';
 
 export default function Contact() {
+
+    const notify = () => toast("Your message was sent!");
 
     const form = useRef();
 
@@ -12,11 +16,14 @@ export default function Contact() {
             .then((result) => {
                 console.log(result.text);
                 console.log('message sent')
+                notify()
                 e.target.reset()
             }, (error) => {
                 console.log(error.text);
             });
     };
+
+    console.log(form.value)
 
     return (
         <div className='bg-dark-green text-stone-100 relative grid grid-cols-2 justify-center items-center py-20 h-full w-full px-6 md:px-32'>
@@ -25,6 +32,18 @@ export default function Contact() {
                 <p>Let's connect! Have a project idea or want to say hello? Reach out using the contact form or connect on social media. Let's bring your ideas to life!</p>
             </div>
             <div className="w-full">
+                <ToastContainer
+                    position="top-right"
+                    autoClose={5000}
+                    hideProgressBar={false}
+                    newestOnTop={false}
+                    closeOnClick
+                    rtl={false}
+                    pauseOnFocusLoss
+                    draggable
+                    pauseOnHover
+                    theme="dark"
+                />
                 <form
                     ref={form}
                     onSubmit={sendEmail}
@@ -34,18 +53,22 @@ export default function Contact() {
                     <input
                         type="text"
                         name="user_name"
-                        className='border-2 mb-6 rounded text-light-green p-3 border-light-green bg-transparent' />
+                        className='border-2 mb-6 rounded text-light-green p-3 border-light-green bg-transparent'
+                        required
+                    />
                     <label>Email</label>
                     <input
                         type="email"
                         name="user_email"
                         className='border-2 mb-6 rounded text-light-green p-3 border-light-green bg-transparent'
+                        required
                     />
                     <label>Message</label>
                     <textarea
                         name="message"
                         className='border-2 mb-6 rounded text-light-green p-3 border-light-green bg-transparent'
-                    />
+                        required
+                    ></textarea>
                     <input
                         type="submit"
                         value="Send"
