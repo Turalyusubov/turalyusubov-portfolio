@@ -27,9 +27,9 @@ export default function Contact() {
 
     return (
         <div className='bg-dark-green text-stone-100 relative grid md:grid-cols-2 justify-center items-center py-20 h-full w-full px-6 md:px-32'>
-            <div className="w-4/5">
-                <h2 className='font-bold mb-8 text-4xl'>Contact <span className='text-light-green drop-shadow-light'>Me!</span></h2>
-                <p>Let's connect! Have a project idea or want to say hello? Reach out using the contact form or connect on social media. Let's bring your ideas to life!</p>
+            <div className="mb-8 md:mb-0 text-center">
+                <h2 className='font-bold mb-8 text-4xl md:w-4/5'>Contact <span className='text-light-green drop-shadow-light'>Me!</span></h2>
+                <p className='md:w-4/5'>Let's connect! Have a project idea or want to say hello? Reach out using the contact form or connect on social media. Let's bring your ideas to life!</p>
             </div>
             <div className="w-full">
                 <ToastContainer

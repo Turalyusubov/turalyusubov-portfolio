@@ -71,12 +71,13 @@ export default function Skills() {
     ]
     return (
         <div className='bg-dark-green text-stone-100 relative grid grid-cols-1 md:grid-cols-2 py-20 h-full w-full px-6 md:px-32'>
-            <div className="w-3/5 text-center">
-                <h2 className='font-bold text-4xl'>My <span className='text-light-green drop-shadow-light'>Skills</span></h2>
+            <div className="text-center mb-8 h-full flex flex-col justify-center">
+                <h2 className='font-bold md:w-4/5 text-4xl mb-8'>My <span className='text-light-green drop-shadow-light'>Skills</span></h2>
+                <p className='md:w-4/5'>Check out my top skills for development! If you don't see what you're looking for, no worries—we can discuss other options too.</p>
             </div>
             <div className="skills-container w-full">
                 {skills.map(skill =>
-                    <div key={skill.id} className="w-full flex justify-center items-center skill-block group relative">
+                    <div key={skill.id} className="w-full flex justify-center items-center cursor-pointer skill-block group relative">
                         <div className={`bg-light-green drop-shadow-light text-dark-green group-hover:text-white absolute overflow-hidden skill-logo ${skill.color} duration-300 z-10 rounded-full text-5xl p-3`}>
                             {skill.logo}
                         </div>
