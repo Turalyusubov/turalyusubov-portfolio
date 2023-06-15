@@ -72,7 +72,7 @@ export default function Contact() {
                     <input
                         type="submit"
                         value="Send"
-                        className='border-2 mb-6 rounded text-dark-green font-bold p-3 border-light-green bg-light-green'
+                        className='border-2 mb-6 rounded text-dark-green font-bold p-3 border-light-green bg-light-green hover:bg-bright-green hover:drop-shadow-bright duration-300 cursor-pointer'
                     />
                 </form>
             </div>

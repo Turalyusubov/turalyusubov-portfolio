@@ -10,10 +10,12 @@ export default {
       colors: {
         'dark-green': '#202616',
         'main-green': '#354024',
-        'light-green': '#CBF277'
+        'light-green': '#CBF277',
+        'bright-green': '#E7F291'
       },
       dropShadow: {
-        'light': '0 0px 3px #6D8C3F'
+        'light': '0 0px 3px #6D8C3F',
+        'bright': '0 0px 3px #CBF277'
       }
     },
   },
