@@ -8,10 +8,13 @@ export default {
 
     extend: {
       colors: {
-        'dark-green': '#193B1A',
-        'main-green': '#3D8F40',
-        'light-green': '#6CFA70'
+        'dark-green': '#202616',
+        'main-green': '#354024',
+        'light-green': '#CBF277'
       },
+      dropShadow: {
+        'light': '0 0px 3px #6D8C3F'
+      }
     },
   },
   plugins: [],
