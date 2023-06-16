@@ -78,10 +78,12 @@ export default function Skills() {
             <div className="skills-container w-full">
                 {skills.map(skill =>
                     <div key={skill.id} className="w-full flex justify-center items-center cursor-pointer skill-block group relative">
-                        <div className={`bg-light-green drop-shadow-light text-dark-green group-hover:text-white absolute overflow-hidden skill-logo ${skill.color} duration-300 z-10 rounded-full text-5xl p-3`}>
-                            {skill.logo}
+                        <div className={`bg-light-green drop-shadow-light text-dark-green absolute overflow-hidden skill-logo ${skill.color} drop-shadow-[0 0px 3px #FFF] duration-300 z-10 rounded-full text-5xl p-3`}>
+                            <div className="">
+                                {skill.logo}
+                            </div>
                         </div>
-                        <p className='skill-name absolute text-dark-green group-hover:text-white left-0 z-0'>{skill.name}</p>
+                        {/* <p className='skill-name absolute text-dark-green group-hover:text-white left-0 z-0'>{skill.name}</p> */}
                     </div>
                 )}
             </div>

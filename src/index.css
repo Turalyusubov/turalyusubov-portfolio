@@ -12,8 +12,8 @@ body {
     transition: all .3s;
 } */
 
-.skill-block:hover .skill-name {
-    left: 70%;
+/* .skill-block:hover .skill-name {
+    bottom: 80%;
 }
 
 .skill-block:hover .skill-logo {
@@ -21,14 +21,14 @@ body {
 }
 
 .skill-logo {
-    left: 28%;
+    left: 0;
     transition: all .3s ease-out;
 }
 
 .skill-name {
     left: 50%;
     transition: all .3s ease-out;
-}
+} */
 
 .skills-container {
     display: grid;
@@ -60,6 +60,6 @@ body {
 }
 
 .project:hover .project-cover {
-    transform: translateY(-10px);
+    transform: translateY(-1em);
     /* transform: scale(105%); */
 }
