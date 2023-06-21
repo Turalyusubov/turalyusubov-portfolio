@@ -63,3 +63,15 @@ body {
     transform: translateY(-1em);
     /* transform: scale(105%); */
 }
+
+
+.about-image-spin {
+    transform: translate(-50%, -50%) rotate(0);
+    animation: aboutSpinner 8s linear infinite;
+}
+
+@keyframes aboutSpinner {
+    100% {
+        transform: translate(-50%, -50%) rotate(360deg);
+    }
+}
