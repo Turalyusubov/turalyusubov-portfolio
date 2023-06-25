@@ -2,6 +2,7 @@ import React, { useRef } from 'react';
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 import emailjs from '@emailjs/browser';
+import { AiOutlineArrowUp } from 'react-icons/ai'
 
 export default function Contact() {
 
@@ -28,8 +29,13 @@ export default function Contact() {
 
     console.log(form.value)
 
+    function topFunction() {
+        document.body.scrollTop = 0; // For Safari
+        document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
+    }
+
     return (
-        <div id='contact' className='bg-dark-green'>
+        <div id='contact' className='bg-dark-green relative'>
             <div className="relative text-stone-100 grid md:grid-cols-2 justify-center items-center py-20 h-full w-full px-6 md:px-32">
                 <div className="mb-8 md:mb-0 text-center">
                     <h2 className='group font-bold mb-8 text-4xl md:w-4/5'>Contact <span className='text-light-green drop-shadow-light group-hover:text-bright-greeen group-hover:drop-shadow-bright duration-300'>Me!</span></h2>
@@ -82,6 +88,9 @@ export default function Contact() {
                 </div>
             </div>
             <div className="text-center text-stone-400 pb-4">©Tural Yusubov. All rights reserved.</div>
+            <div className="flex w-full justify-center">
+                <div className="absolute -top-8 bg-dark-green p-4 rounded-full text-light-green text-4xl hover:drop-shadow-bright duration-300 border-2 border-dark-green hover:border-bright-green group cursor-pointer" onClick={topFunction}><AiOutlineArrowUp className='group-hover:drop-shadow-bright group-hover:text-bright-green duration-300' /></div>
+            </div>
         </div>
     )
 }
