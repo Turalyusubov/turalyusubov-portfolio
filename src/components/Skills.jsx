@@ -83,7 +83,10 @@ export default function Skills() {
                                 {skill.logo}
                             </div>
                         </div>
-                        {/* <p className='skill-name absolute text-dark-green group-hover:text-white left-0 z-0'>{skill.name}</p> */}
+                        <div className="z-20 w-2/3">
+                            <p className='left-0 skill-name text-transparent group-hover:bg-main-green rounded group-hover:border-bright-green group-hover:border-2 group-hover:drop-shadow-bright p-2 text-center group-hover:text-bright-green duration-300'>{skill.name}</p>
+
+                        </div>
                     </div>
                 )}
             </div>

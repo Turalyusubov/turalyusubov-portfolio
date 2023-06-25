@@ -4,31 +4,13 @@
 @tailwind components;
 @tailwind utilities;
 
+html {
+    scroll-behavior: smooth;
+}
+
 body {
     font-family: 'Lexend Deca', sans-serif;
 }
-
-/* .skill-name {
-    transition: all .3s;
-} */
-
-/* .skill-block:hover .skill-name {
-    bottom: 80%;
-}
-
-.skill-block:hover .skill-logo {
-    left: 0
-}
-
-.skill-logo {
-    left: 0;
-    transition: all .3s ease-out;
-}
-
-.skill-name {
-    left: 50%;
-    transition: all .3s ease-out;
-} */
 
 .skills-container {
     display: grid;

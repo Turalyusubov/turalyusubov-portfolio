@@ -19,23 +19,20 @@ export default function Header() {
                         }}
                     />
                 </h1>
-                <h2 className='text-light-green my-4 md:my-6 font-bold text-2xl md:text-3xl drop-shadow-light'>Frontend Developer</h2>
+                <h2 className='text-light-green my-4 md:my-6 font-bold text-2xl md:text-3xl drop-shadow-light hover:text-bright-green hover:drop-shadow-bright duration-300'>Frontend Developer</h2>
                 <p className='text-stone-100 mb-10'>I'm a dedicated frontend developer and I love creating visually stunning and user-friendly websites that make an impact. Let's collaborate and bring ideas to life!</p>
                 <div className="btns w-full justify-center flex gap-4 md:gap-8">
-                    <button className='border-2 rounded-md w-full md:w-max bg-light-green text-dark-green drop-shadow-light font-bold md:px-8 py-2 border-light-green hover:bg-bright-green hover:drop-shadow-bright duration-300'>Hire Me</button>
-                    <button className='border-2 rounded-md w-full md:w-max bg-transparent text-light-green drop-shadow-light font-bold md:px-8 py-2 border-light-green hover:border-bright-green hover:text-bright-green hover:drop-shadow-bright duration-300'>Let's Talk</button>
+                    <a className='border-2 rounded-md w-full md:w-max bg-light-green text-dark-green drop-shadow-light font-bold md:px-8 py-2 border-light-green hover:bg-bright-green hover:drop-shadow-bright duration-300 cursor-pointer' href='#about'>Hire Me</a>
+                    <a className='border-2 rounded-md w-full md:w-max bg-transparent text-light-green drop-shadow-light font-bold md:px-8 py-2 border-light-green hover:border-bright-green hover:text-bright-green hover:drop-shadow-bright duration-300 cursor-pointer' href='#contact'>Let's Talk</a>
                 </div>
                 <div className="flex justify-center">
                     <div className="social-media absolute justify-center bottom-10 md:right-10 flex md:flex-col gap-4 mt-full drop-shadow-light">
-                        <a className='rounded-full text-light-green border-[3px] border-light-green text-2xl p-3 hover:text-dark-green hover:bg-bright-green hover:drop-shadow-bright hover:border-bright-green duration-500' href=""><FiGithub /></a>
-                        <a className='rounded-full text-light-green border-[3px] border-light-green text-2xl p-3 hover:text-dark-green hover:bg-bright-green hover:drop-shadow-bright hover:border-bright-green duration-500' href=""><FaLinkedinIn /></a>
-                        <a className='rounded-full text-light-green border-[3px] border-light-green text-2xl p-3 hover:text-dark-green hover:bg-bright-green hover:drop-shadow-bright hover:border-bright-green duration-500' href=""><AiOutlineInstagram /></a>
+                        <a target='_blank' className='rounded-full text-light-green border-[3px] border-light-green text-2xl p-3 hover:text-dark-green hover:bg-bright-green hover:drop-shadow-bright hover:border-bright-green duration-500' href="https://github.com/Turalyusubov"><FiGithub /></a>
+                        <a target='_blank' className='rounded-full text-light-green border-[3px] border-light-green text-2xl p-3 hover:text-dark-green hover:bg-bright-green hover:drop-shadow-bright hover:border-bright-green duration-500' href="https://www.linkedin.com/in/tural-yusubov-a29564238/"><FaLinkedinIn /></a>
+                        <a target='_blank' className='rounded-full text-light-green border-[3px] border-light-green text-2xl p-3 hover:text-dark-green hover:bg-bright-green hover:drop-shadow-bright hover:border-bright-green duration-500' href="https://www.instagram.com/tural60_y/"><AiOutlineInstagram /></a>
                     </div>
                 </div>
             </div>
-            {/* <div className="header-right w-full h-full flex justify-center items-center">
-                <img className='w-4/5 rounded-t-full' src={Profile} alt="profile" />
-            </div> */}
         </div>
     )
 }
