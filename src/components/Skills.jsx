@@ -77,7 +77,7 @@ export default function Skills() {
             </div>
             <div className="skills-container w-full mt-8 md:mt-0">
                 {skills.map(skill =>
-                    <div key={skill.id} title={skill.name} className="w-full flex justify-center items-center cursor-pointer skill-block group relative">
+                    <div key={skill.id} title={skill.name} className="w-full flex justify-center items-center cursor-default skill-block group relative">
                         <div className={`bg-light-green drop-shadow-light text-dark-green absolute overflow-hidden skill-logo ${skill.color} group-hover:drop-shadow-none duration-300 z-10 rounded-full text-5xl p-3`}>
                             <div className="">
                                 {skill.logo}

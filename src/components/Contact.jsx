@@ -64,6 +64,7 @@ export default function Contact() {
                             type="text"
                             name="user_name"
                             className='border-2 mb-6 rounded text-light-green p-3 border-light-green bg-transparent'
+                            placeholder='Your Name'
                             required
                         />
                         <label>Email</label>
@@ -71,12 +72,14 @@ export default function Contact() {
                             type="email"
                             name="user_email"
                             className='border-2 mb-6 rounded text-light-green p-3 border-light-green bg-transparent'
+                            placeholder='Your Email'
                             required
                         />
                         <label>Message</label>
                         <textarea
                             name="message"
-                            className='border-2 mb-6 rounded text-light-green p-3 border-light-green bg-transparent'
+                            className='border-2 h-[16vh] mb-6 rounded text-light-green p-3 border-light-green bg-transparent'
+                            placeholder='Your Message'
                             required
                         ></textarea>
                         <input
