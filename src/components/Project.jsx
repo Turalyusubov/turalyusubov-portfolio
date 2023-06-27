@@ -4,7 +4,10 @@ import { BsBoxArrowUpRight, BsGithub } from 'react-icons/bs'
 
 export default function Project({ title, about, github, live, cover }) {
     return (
-        <div className='rounded-md group project cursor-default'>
+        <div
+            data-aos="fade-down"
+            data-aos-duration="1000"
+            className='rounded-md group project cursor-default'>
             <div className="project-cover relative group-hover:rounded-xl group-hover:drop-shadow-light overflow-hidden">
                 <a href={live} target='_blank' className='cursor-pointer'>
                     <img className='w-full project-img rounded-t-xl'

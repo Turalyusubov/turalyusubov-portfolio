@@ -37,11 +37,18 @@ export default function Contact() {
     return (
         <div id='contact' className='bg-dark-green relative'>
             <div className="relative text-stone-100 grid md:grid-cols-2 justify-center items-center py-20 h-full w-full px-6 md:px-32">
-                <div className="mb-8 md:mb-0 text-center">
+                <div
+                    data-aos="fade-right"
+                    data-aos-duration="1000"
+                    className="mb-8 md:mb-0 text-center">
                     <h2 className='group font-bold mb-8 text-4xl md:w-4/5'>Contact <span className='text-light-green drop-shadow-light group-hover:text-bright-greeen group-hover:drop-shadow-bright duration-300'>Me!</span></h2>
-                    <p className='md:w-4/5'>Let's connect! Have a project idea or want to say hello? Reach out using the contact form or connect on social media. Let's bring your ideas to life!</p>
+                    <p data-aos="fade-right"
+                        data-aos-duration="1100" className='md:w-4/5'>Let's connect! Have a project idea or want to say hello? Reach out using the contact form or connect on social media. Let's bring your ideas to life!</p>
                 </div>
-                <div className="w-full">
+                <div
+                    data-aos="fade-left"
+                    data-aos-duration="1000"
+                    className="w-full">
                     <ToastContainer
                         position="top-right"
                         autoClose={5000}
