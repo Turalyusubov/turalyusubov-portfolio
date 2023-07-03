@@ -1,12 +1,13 @@
 import React from 'react'
-// import { AiFillGithub } from 'react-icons/ai'
+import { motion } from 'framer-motion'
 import { BsBoxArrowUpRight, BsGithub } from 'react-icons/bs'
 
 export default function Project({ title, about, github, live, cover }) {
     return (
-        <div
-            data-aos="fade-down"
-            data-aos-duration="1000"
+        <motion.div
+            initial={{ y: -100, opacity: 0, }}
+            whileInView={{ y: 0, opacity: 1, }}
+            transition={{ duration: .5, delay: .2 }}
             className='rounded-md group project cursor-default'>
             <div className="project-cover relative group-hover:rounded-xl group-hover:drop-shadow-light overflow-hidden">
                 <a href={live} target='_blank' className='cursor-pointer'>
@@ -29,6 +30,6 @@ export default function Project({ title, about, github, live, cover }) {
                     </div>
                 </div>
             </div>
-        </div>
+        </motion.div>
     )
 }

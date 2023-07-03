@@ -3,6 +3,7 @@ import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 import emailjs from '@emailjs/browser';
 import { AiOutlineArrowUp } from 'react-icons/ai'
+import { motion } from 'framer-motion'
 
 export default function Contact() {
 
@@ -38,16 +39,22 @@ export default function Contact() {
         <div id='contact' className='bg-dark-green relative'>
             <div className="relative text-stone-100 grid md:grid-cols-2 justify-center items-center py-20 h-full w-full px-6 md:px-32">
                 <div
-                    data-aos="fade-right"
-                    data-aos-duration="1000"
                     className="mb-8 md:mb-0 text-center">
-                    <h2 className='group font-bold mb-8 text-4xl md:w-4/5'>Contact <span className='text-light-green drop-shadow-light group-hover:text-bright-greeen group-hover:drop-shadow-bright duration-300'>Me!</span></h2>
-                    <p data-aos="fade-right"
-                        data-aos-duration="1100" className='md:w-4/5'>Let's connect! Have a project idea or want to say hello? Reach out using the contact form or connect on social media. Let's bring your ideas to life!</p>
+                    <motion.h2
+                        initial={{ x: -100, opacity: 0, }}
+                        whileInView={{ x: 0, opacity: 1, }}
+                        transition={{ duration: .5, delay: .2 }}
+                        className='group font-bold mb-8 text-4xl md:w-4/5'>Contact <span className='text-light-green drop-shadow-light group-hover:text-bright-greeen group-hover:drop-shadow-bright duration-300'>Me!</span></motion.h2>
+                    <motion.p
+                        initial={{ x: -100, opacity: 0, }}
+                        whileInView={{ x: 0, opacity: 1, }}
+                        transition={{ duration: .5, delay: .3 }}
+                        className='md:w-4/5'>Let's connect! Have a project idea or want to say hello? Reach out using the contact form or connect on social media. Let's bring your ideas to life!</motion.p>
                 </div>
-                <div
-                    data-aos="fade-left"
-                    data-aos-duration="1000"
+                <motion.div
+                    initial={{ x: 100, opacity: 0, }}
+                    whileInView={{ x: 0, opacity: 1, }}
+                    transition={{ duration: .5, delay: .2 }}
                     className="w-full">
                     <ToastContainer
                         position="top-right"
@@ -95,7 +102,7 @@ export default function Contact() {
                             className='border-2 mb-6 rounded text-dark-green font-bold p-3 border-light-green bg-light-green hover:bg-bright-green hover:drop-shadow-bright duration-300 cursor-pointer'
                         />
                     </form>
-                </div>
+                </motion.div>
             </div>
             <div className="text-center text-stone-400 pb-4">©Tural Yusubov. All rights reserved.</div>
             <div className="flex w-full justify-center">

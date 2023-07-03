@@ -1,4 +1,5 @@
 import React from 'react'
+import { motion } from 'framer-motion'
 
 import {
     AiFillHtml5,
@@ -72,18 +73,21 @@ export default function Skills() {
     return (
         <div className='bg-dark-green text-stone-100 relative grid grid-cols-1 md:grid-cols-2 py-20 h-full w-full px-6 md:px-32'>
             <div className="text-center mb-8 h-full flex flex-col justify-center">
-                <h2
-                    data-aos="fade-right"
-                    data-aos-duration="1000"
-                    className='font-bold md:w-4/5 text-4xl mb-8 group'>My <span className='text-light-green drop-shadow-light group-hover:text-bright-green group-hover:drop-shadow-bright duration-300'>Skills</span></h2>
-                <p
-                    data-aos="fade-right"
-                    data-aos-duration="1100"
-                    className='md:w-4/5'>Check out my top skills for development! If you don't see what you're looking for, no worries—we can discuss other options too.</p>
+                <motion.h2
+                    initial={{ x: -100, opacity: 0, }}
+                    whileInView={{ x: 0, opacity: 1, }}
+                    transition={{ duration: .5, delay: .2 }}
+                    className='font-bold md:w-4/5 text-4xl mb-8 group'>My <span className='text-light-green drop-shadow-light group-hover:text-bright-green group-hover:drop-shadow-bright duration-300'>Skills</span></motion.h2>
+                <motion.p
+                    initial={{ x: -100, opacity: 0, }}
+                    whileInView={{ x: 0, opacity: 1, }}
+                    transition={{ duration: .5, delay: .3 }}
+                    className='md:w-4/5'>Check out my top skills for development! If you don't see what you're looking for, no worries—we can discuss other options too.</motion.p>
             </div>
-            <div
-                data-aos="fade-left"
-                data-aos-duration="1000"
+            <motion.div
+                initial={{ x: 100, opacity: 0, }}
+                whileInView={{ x: 0, opacity: 1, }}
+                transition={{ duration: .5, delay: .2 }}
                 className="skills-container w-full mt-8 md:mt-0">
                 {skills.map(skill =>
                     <div key={skill.id} title={skill.name} className="w-full flex justify-center items-center cursor-default skill-block group relative">
@@ -98,7 +102,7 @@ export default function Skills() {
                         </div>
                     </div>
                 )}
-            </div>
+            </motion.div>
 
         </div>
     )
