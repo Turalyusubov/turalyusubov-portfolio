@@ -41,17 +41,20 @@ export default function Contact() {
                 <div
                     className="mb-8 md:mb-0 text-center">
                     <motion.h2
+                        viewport={{ once: true }}
                         initial={{ x: -100, opacity: 0, }}
                         whileInView={{ x: 0, opacity: 1, }}
                         transition={{ duration: .5, delay: .2 }}
                         className='group font-bold mb-8 text-4xl md:w-4/5'>Contact <span className='text-light-green drop-shadow-light group-hover:text-bright-greeen group-hover:drop-shadow-bright duration-300'>Me!</span></motion.h2>
                     <motion.p
+                        viewport={{ once: true }}
                         initial={{ x: -100, opacity: 0, }}
                         whileInView={{ x: 0, opacity: 1, }}
                         transition={{ duration: .5, delay: .3 }}
                         className='md:w-4/5'>Let's connect! Have a project idea or want to say hello? Reach out using the contact form or connect on social media. Let's bring your ideas to life!</motion.p>
                 </div>
                 <motion.div
+                    viewport={{ once: true }}
                     initial={{ x: 100, opacity: 0, }}
                     whileInView={{ x: 0, opacity: 1, }}
                     transition={{ duration: .5, delay: .2 }}

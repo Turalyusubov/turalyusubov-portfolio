@@ -5,6 +5,7 @@ import { BsBoxArrowUpRight, BsGithub } from 'react-icons/bs'
 export default function Project({ title, about, github, live, cover }) {
     return (
         <motion.div
+            viewport={{ once: true }}
             initial={{ y: -100, opacity: 0, }}
             whileInView={{ y: 0, opacity: 1, }}
             transition={{ duration: .5, delay: .2 }}
