@@ -71,7 +71,7 @@ export default function Skills() {
         }
     ]
     return (
-        <div className='bg-dark-green text-stone-100 relative grid grid-cols-1 md:grid-cols-2 py-20 h-full w-full px-6 md:px-32'>
+        <div className='bg-dark-green overflow-x-hidden text-stone-100 relative grid grid-cols-1 md:grid-cols-2 py-20 h-full w-full px-6 md:px-32'>
             <div className="text-center mb-8 h-full flex flex-col justify-center">
                 <motion.h2
                     viewport={{ once: true }}

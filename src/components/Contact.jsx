@@ -28,15 +28,8 @@ export default function Contact() {
             });
     };
 
-    console.log(form.value)
-
-    function topFunction() {
-        document.body.scrollTop = 0; // For Safari
-        document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
-    }
-
     return (
-        <div id='contact' className='bg-dark-green relative'>
+        <div id='contact' className='bg-dark-green overflow-x-hidden relative'>
             <div className="relative text-stone-100 grid md:grid-cols-2 justify-center items-center py-20 h-full w-full px-6 md:px-32">
                 <div
                     className="mb-8 md:mb-0 text-center">
@@ -108,9 +101,6 @@ export default function Contact() {
                 </motion.div>
             </div>
             <div className="text-center text-stone-400 pb-4">©Tural Yusubov. All rights reserved.</div>
-            <div className="flex w-full justify-center">
-                <div className="absolute -top-8 bg-dark-green p-4 rounded-full text-light-green text-4xl hover:drop-shadow-bright duration-300 border-2 border-dark-green hover:border-bright-green group cursor-pointer" onClick={topFunction}><AiOutlineArrowUp className='group-hover:drop-shadow-bright group-hover:text-bright-green duration-300' /></div>
-            </div>
         </div>
     )
 }

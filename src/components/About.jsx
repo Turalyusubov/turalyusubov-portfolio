@@ -6,7 +6,7 @@ import { motion } from 'framer-motion'
 export default function About() {
 
     return (
-        <div id='about' className='bg-main-green text-stone-100 relative flex flex-col items-center py-20 h-full w-full px-6 md:px-32'>
+        <div id='about' className='bg-main-green overflow-x-hidden text-stone-100 relative flex flex-col items-center py-20 h-full w-full px-6 md:px-32'>
             <h2 className='font-bold text-4xl mb-8 group'>About <span className='text-light-green group-hover:text-bright-green group-hover:drop-shadow-bright duration-300 drop-shadow-light'>Me</span></h2>
             <div className="grid md:grid-cols-3">
                 <div className="grid grid-rows-2 gap-8">

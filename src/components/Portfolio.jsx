@@ -1,17 +1,16 @@
 import React, { useState } from 'react'
 import Project from './Project'
 import { projects } from '../projects'
+import { AiOutlineArrowUp } from 'react-icons/ai'
+
 
 export default function Portfolio() {
     const [itemCount, setitemCount] = useState(3)
     const itemsToShow = projects.slice(itemCount).reverse()
 
-    const showMore = () => {
-        if (itemCount === 3) {
-            setitemCount(0)
-        } else {
-            setitemCount(3)
-        }
+    function topFunction() {
+        document.body.scrollTop = 0; // For Safari
+        document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
     }
 
     return (
@@ -31,6 +30,9 @@ export default function Portfolio() {
             </div>
             {itemCount === 3 && <button className='mt-8 border-2 rounded-md w-full md:w-max bg-transparent text-light-green drop-shadow-light font-bold md:px-8 py-2 border-light-green hover:border-bright-green hover:text-bright-green hover:drop-shadow-bright hover:border-x-8 hover:px-6 duration-300' onClick={() => setitemCount(0)}>Show More</button>}
             {itemCount !== 3 && <p className='mt-8 italic text-stone-300'>More in my <a className='text-light-green drop-shadow-light hover:text-bright-green hover:drop-shadow-bright duration-300' target='_blank' href="https://github.com/Turalyusubov">Github</a></p>}
+            <div className="flex w-full z-50 justify-center">
+                <div onClick={topFunction} className="absolute -bottom-8 bg-dark-green p-4 rounded-full text-light-green text-4xl hover:drop-shadow-bright duration-300 border-2 border-dark-green hover:border-bright-green group cursor-pointer" ><AiOutlineArrowUp className='group-hover:drop-shadow-bright group-hover:text-bright-green duration-300' /></div>
+            </div>
         </div>
     )
 }
