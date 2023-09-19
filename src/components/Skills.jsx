@@ -100,7 +100,7 @@ export default function Skills() {
                             </div>
                         </div>
                         <div className="z-20 w-2/3">
-                            <p className='left-0 skill-name text-transparent group-hover:bg-main-green rounded group-hover:border-bright-green group-hover:border-2 group-hover:drop-shadow-bright p-2 text-center group-hover:text-bright-green duration-300'>{skill.name}</p>
+                            <p className='left-0 skill-name text-transparent group-hover:bg-main-green rounded group-hover:border-bright-green text-sm group-hover:border-2 group-hover:drop-shadow-bright p-2 text-center group-hover:border-x-8 group-hover:text-bright-green duration-300'>{skill.name}</p>
 
                         </div>
                     </div>
