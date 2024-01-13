@@ -2,9 +2,8 @@ import AcmeCover from './assets/acme-cover.png'
 import JudicoCover from './assets/judico-cover.png'
 import FitzoneCover from './assets/fitzone-cover.png'
 import StroyCover from './assets/rusenergostroy-cover.png'
-import TenziesCover from './assets/tenzies-cover.png'
-import TypingCover from './assets/typing-cover.png'
 import PlastCover from './assets/plast-cover.jpg'
+import FurniroCover from './assets/furniro-cover.jpg'
 
 export const projects = [
     {
@@ -17,11 +16,11 @@ export const projects = [
     },
     {
         id: 5,
-        title: 'Tenzies',
-        about: 'Cool game to short your time',
-        github: 'https://github.com/Turalyusubov/tenzies-2-game',
-        live: 'https://tenzies-by-tural.netlify.app/',
-        cover: TenziesCover
+        title: 'Furniro',
+        about: 'Wesbite for a furniture e-commerce',
+        github: 'https://github.com/Turalyusubov/furniro-tural',
+        live: 'https://furniro-tural.vercel.app/',
+        cover: FurniroCover
     },
     {
         id: 3,
