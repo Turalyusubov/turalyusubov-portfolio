@@ -3,6 +3,7 @@ import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 import emailjs from '@emailjs/browser';
 import { AiOutlineArrowUp } from 'react-icons/ai'
+import { SiGmail } from 'react-icons/si'
 import { motion } from 'framer-motion'
 
 export default function Contact() {
@@ -45,6 +46,15 @@ export default function Contact() {
                         whileInView={{ x: 0, opacity: 1, }}
                         transition={{ duration: .5, delay: .3 }}
                         className='md:w-4/5'>Let's connect! Have a project idea or want to say hello? Reach out using the contact form or connect on social media. Let's bring your ideas to life!</motion.p>
+
+                    {/* <div className="w-full pl-4">
+                        <div className="flex group items-center w-full gap-2">
+                            <div className="border-light-green border-2 rounded-full w-12 h-12 flex items-center justify-center text-2xl">
+                                <SiGmail className='text-light-green drop-shadow-light group-hover:text-bright-greeen group-hover:drop-shadow-bright duration-300' />
+                            </div>
+                            <span>turall.yusubov@gmail.com</span>
+                        </div>
+                    </div> */}
                 </div>
                 <motion.div
                     viewport={{ once: true }}

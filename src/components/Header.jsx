@@ -27,7 +27,7 @@ export default function Header() {
                     <a className='border-2 rounded-md w-full md:w-max bg-transparent text-light-green drop-shadow-light font-bold md:px-8 py-2 border-light-green hover:border-bright-green hover:text-bright-green hover:drop-shadow-bright hover:border-x-8 md:hover:px-6 duration-300 cursor-pointer' href='#contact'>Let's Talk</a>
                 </div>
                 <div className="flex justify-center">
-                    <div className="social-media absolute justify-center bottom-10 md:right-10 flex md:flex-col gap-4 mt-full drop-shadow-light">
+                    <div className="social-media absolute justify-center bottom-10 flex gap-4 md:gap-8 mt-full drop-shadow-light">
                         <a target='_blank' className='rounded-full text-light-green border-[3px] border-light-green text-2xl p-3 hover:text-dark-green hover:bg-bright-green hover:drop-shadow-bright hover:border-bright-green duration-500' href="https://github.com/Turalyusubov"><FiGithub /></a>
                         <a target='_blank' className='rounded-full text-light-green border-[3px] border-light-green text-2xl p-3 hover:text-dark-green hover:bg-bright-green hover:drop-shadow-bright hover:border-bright-green duration-500' href="https://www.linkedin.com/in/tural-yusubov-a29564238/"><FaLinkedinIn /></a>
                         <a target='_blank' className='rounded-full text-light-green border-[3px] border-light-green text-2xl p-3 hover:text-dark-green hover:bg-bright-green hover:drop-shadow-bright hover:border-bright-green duration-500' href="mailto:turall.yusubovv@gmail.com"><AiOutlineMail /></a>

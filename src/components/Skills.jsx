@@ -10,7 +10,9 @@ import {
     DiJqueryLogo,
     SiTailwindcss,
     BsGit,
-    FaReact
+    FaReact,
+    FaFigma,
+    SiTypescript
 } from 'react-icons/all'
 
 export default function Skills() {
@@ -68,6 +70,18 @@ export default function Skills() {
             name: 'React.js',
             logo: <FaReact />,
             color: 'group-hover:bg-sky-300'
+        },
+        {
+            id: 10,
+            name: 'Figma',
+            logo: <FaFigma />,
+            color: 'group-hover:bg-pink-600'
+        },
+        {
+            id: 11,
+            name: 'Typescript',
+            logo: <SiTypescript />,
+            color: 'group-hover:bg-[#007acc]'
         }
     ]
     return (

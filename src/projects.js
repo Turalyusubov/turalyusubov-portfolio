@@ -4,6 +4,7 @@ import FitzoneCover from './assets/fitzone-cover.png'
 import StroyCover from './assets/rusenergostroy-cover.png'
 import TenziesCover from './assets/tenzies-cover.png'
 import TypingCover from './assets/typing-cover.png'
+import PlastCover from './assets/plast-cover.jpg'
 
 export const projects = [
     {
@@ -23,12 +24,12 @@ export const projects = [
         cover: TenziesCover
     },
     {
-        id: 6,
-        title: 'Typing Game',
-        about: 'Check how fast you are',
-        github: 'https://github.com/Turalyusubov/speed-typing-game',
-        live: 'https://speed-typing-by-tural.netlify.app/',
-        cover: TypingCover
+        id: 3,
+        title: 'Fitzone',
+        about: 'Great app for working out',
+        github: 'https://github.com/Turalyusubov/fitzone-app',
+        live: 'https://fitzone-by-tural.netlify.app/',
+        cover: FitzoneCover
     },
     {
         id: 1,
@@ -47,11 +48,11 @@ export const projects = [
         cover: JudicoCover
     },
     {
-        id: 3,
-        title: 'Fitzone',
-        about: 'Great app for working out',
-        github: 'https://github.com/Turalyusubov/fitzone-app',
-        live: 'https://fitzone-by-tural.netlify.app/',
-        cover: FitzoneCover
+        id: 6,
+        title: 'Plast',
+        about: 'Website for a recycling company',
+        github: 'https://github.com/Turalyusubov/plast-tural',
+        live: 'https://plast-tural.vercel.app/',
+        cover: PlastCover
     },
 ]
